@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Playwrite IN"; 
+    font-weight: 300;
+    min-height: 100vh; /*altura mínima*/
+    display: flex;
+    flex-direction: column; /*la info va de arriba abajo y no en línea*/
+    justify-content: space-between; /*crea un espacio el título y el texto footer*/
+}
+header{
+    display: flex;
+    justify-content: space-between; /*crea un espacio entre el título y los en laces "uno, dos, tres*/
+    align-items: center; /*centra el "uno, dos, tres en el espacio del header (de arriba abajo)*/
+    padding: 20px;
+    border-bottom: 1px dashed #999;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav li:not(:last-child)/*se esta ignorando el último li*/{
+    margin-right:20px; /*es para separa los li*/
+}
+.contenido{
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px 0 100px; /*medidas, arriba, a los lados, y abajo*/ /*100px son para separar el contenido del footer (en caso de que haya mas contenido
+    )*/
+}
+.contenido :not(:first-child){
+    margin-top: 20px;
+}
+footer{
+    padding: 20px;
+    border-top: 1px dashed #999;
+    text-align: center;
+}
+footer p{
+    text-align: center;
+}
